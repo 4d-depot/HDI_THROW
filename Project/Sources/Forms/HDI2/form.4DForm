@@ -1,0 +1,564 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1200,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 1000,
+	"windowMaxHeight": 32000,
+	"width": 1200,
+	"height": 1000,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1160,
+					"height": 960,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "objTabs",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 950,
+					"left": 30,
+					"width": 110,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 100,
+					"left": 50,
+					"width": 1100,
+					"height": 1100,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions[0]",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": -158,
+					"left": 1545,
+					"width": 313,
+					"height": 280,
+					"picture": "Images/Screenshot 2022-12-05 at 11.31.03.png",
+					"pictureFormat": "scaled",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"Input32": {
+					"type": "input",
+					"left": 400,
+					"top": 660,
+					"width": 350,
+					"height": 300,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.dataModel",
+					"pictureFormat": "scaled",
+					"enterable": false,
+					"focusable": false,
+					"sizingX": "fixed",
+					"sizingY": "grow"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information9": {
+					"type": "input",
+					"top": 80,
+					"left": 50,
+					"width": 496,
+					"height": 300,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions[1]",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button14": {
+					"type": "button",
+					"text": "THROW",
+					"top": 450,
+					"left": 557,
+					"width": 140,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button14.4dm",
+					"focusable": false
+				},
+				"Input31": {
+					"type": "input",
+					"left": 750,
+					"top": 482,
+					"width": 365,
+					"height": 241,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "system",
+					"dataSource": "_Directions[1]",
+					"styledText": true,
+					"scrollbarVertical": "hidden",
+					"sizingY": "grow"
+				},
+				"Popup Dropdown List": {
+					"type": "dropdown",
+					"left": 77,
+					"top": 450,
+					"width": 184,
+					"height": 28,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.codes"
+				},
+				"Popup Dropdown List1": {
+					"type": "dropdown",
+					"left": 313,
+					"top": 450,
+					"width": 184,
+					"height": 28,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.descriptions"
+				},
+				"Input5": {
+					"type": "input",
+					"left": 225,
+					"top": 636,
+					"width": 179,
+					"height": 20,
+					"dataSource": "Form:C1466.message",
+					"enterable": false,
+					"fill": "transparent"
+				},
+				"Input6": {
+					"type": "input",
+					"left": 320,
+					"top": 698,
+					"width": 150,
+					"height": 20,
+					"dataSource": "Form:C1466.countOnErrCall",
+					"enterable": false,
+					"fill": "transparent"
+				},
+				"Input7": {
+					"type": "input",
+					"left": 225,
+					"top": 583,
+					"width": 179,
+					"height": 20,
+					"dataSource": "Form:C1466.errCode",
+					"enterable": false,
+					"fill": "transparent"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Error code",
+					"top": 585,
+					"left": 50,
+					"width": 126,
+					"height": 16
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Message",
+					"top": 636,
+					"left": 50,
+					"width": 126,
+					"height": 16
+				},
+				"Text4": {
+					"type": "text",
+					"text": "ON ERR CALL method has been called",
+					"top": 698,
+					"left": 50,
+					"width": 300,
+					"height": 16
+				},
+				"Text5": {
+					"type": "text",
+					"text": "times",
+					"top": 698,
+					"left": 490,
+					"width": 100,
+					"height": 16
+				}
+			}
+		},
+		{
+			"objects": {
+				"information8": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 850,
+					"height": 250,
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions[2]",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Popup Dropdown List2": {
+					"type": "dropdown",
+					"left": 75,
+					"top": 340,
+					"width": 215,
+					"height": 41,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.fileNames"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Show on disk",
+					"top": 346,
+					"left": 321,
+					"width": 143,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Input4": {
+					"type": "input",
+					"left": 525,
+					"top": 421,
+					"width": 416,
+					"height": 33,
+					"dataSource": "Form:C1466.countOnErrCall"
+				},
+				"Input8": {
+					"type": "input",
+					"left": 286,
+					"top": 437,
+					"width": 179,
+					"height": 33,
+					"dataSource": "Form:C1466.result"
+				},
+				"Input9": {
+					"type": "input",
+					"left": 75,
+					"top": 437,
+					"width": 179,
+					"height": 33,
+					"dataSource": "Form:C1466.code"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 850,
+					"height": 250,
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions[2]",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Users",
+					"top": 550,
+					"left": 50,
+					"width": 100,
+					"height": 20,
+					"fontWeight": "bold"
+				},
+				"Popup Dropdown List3": {
+					"type": "dropdown",
+					"left": 75,
+					"top": 340,
+					"width": 215,
+					"height": 41,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.fileNames"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Show on disk",
+					"top": 346,
+					"left": 321,
+					"width": 143,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 75,
+					"top": 424,
+					"width": 242,
+					"height": 33,
+					"dataSource": "Form:C1466.result"
+				},
+				"List Box2": {
+					"type": "listbox",
+					"left": 75,
+					"top": 590,
+					"width": 504,
+					"height": 190,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.errors",
+					"selectionMode": "none",
+					"focusable": false,
+					"scrollbarHorizontal": "hidden",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header3"
+							},
+							"name": "Column3",
+							"footer": {
+								"name": "Footer3"
+							},
+							"dataSource": "This:C1470.errCode"
+						},
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header7"
+							},
+							"name": "Column7",
+							"footer": {
+								"name": "Footer7"
+							},
+							"dataSource": "This:C1470.message"
+						},
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header4"
+							},
+							"name": "Column4",
+							"footer": {
+								"name": "Footer4"
+							},
+							"dataSource": "This:C1470.deferred"
+						}
+					]
+				},
+				"Input3": {
+					"type": "input",
+					"left": 345,
+					"top": 424,
+					"width": 242,
+					"height": 33,
+					"dataSource": "Form:C1466.countOnErrCall"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 850,
+					"height": 250,
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions[2]",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Users",
+					"top": 550,
+					"left": 50,
+					"width": 100,
+					"height": 20,
+					"fontWeight": "bold"
+				},
+				"Popup Dropdown List4": {
+					"type": "dropdown",
+					"left": 75,
+					"top": 340,
+					"width": 215,
+					"height": 41,
+					"events": [
+						"onDataChange"
+					],
+					"dataSourceTypeHint": "object",
+					"dataSource": "Form:C1466.fileNames"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Show on disk",
+					"top": 346,
+					"left": 321,
+					"width": 143,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 75,
+					"top": 424,
+					"width": 242,
+					"height": 33,
+					"dataSource": "Form:C1466.result"
+				},
+				"List Box3": {
+					"type": "listbox",
+					"left": 75,
+					"top": 590,
+					"width": 504,
+					"height": 190,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.errors",
+					"selectionMode": "none",
+					"focusable": false,
+					"scrollbarHorizontal": "hidden",
+					"columns": [
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header5"
+							},
+							"name": "Column5",
+							"footer": {
+								"name": "Footer5"
+							},
+							"dataSource": "This:C1470.errCode"
+						},
+						{
+							"header": {
+								"text": "Header1",
+								"name": "Header6"
+							},
+							"name": "Column6",
+							"footer": {
+								"name": "Footer6"
+							},
+							"dataSource": "This:C1470.message"
+						}
+					]
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 6031,
+	"windowSizingY": "variable"
+}
