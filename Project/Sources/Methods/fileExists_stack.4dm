@@ -7,7 +7,6 @@ If (btnTrace)
 	TRACE:C157
 End if 
 
-//Form.error:=New object("componentSignature"; "HDI1"; "errCode"; 2)
 
 If ($deferred)
 	
@@ -15,7 +14,6 @@ If ($deferred)
 		throw:C1805(New object:C1471("componentSignature"; "xbox"; "errCode"; 600; "name"; Form:C1466.fileNames.currentValue; "path"; "/RESOURCES"; "deferred"; $deferred))
 		throw:C1805(New object:C1471("componentSignature"; "HDI1"; "errCode"; 1; "deferred"; $deferred))
 		throw:C1805(New object:C1471("componentSignature"; "HDI1"; "errCode"; 2; "deferred"; $deferred))
-		//throw(Form.error)
 	End if 
 	
 Else 

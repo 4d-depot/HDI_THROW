@@ -6,7 +6,7 @@ If (btnTrace)
 	TRACE:C157
 End if 
 
-emptyStorage
+//emptyStorage
 
 ON ERR CALL:C155("processError")
 
@@ -17,11 +17,14 @@ Case of
 		
 End case 
 
-If (Storage:C1525.onErrCall.errors.length#0)
-	Form:C1466.errCode:=Storage:C1525.onErrCall.errors[0].errCode
-	Form:C1466.message:=Storage:C1525.onErrCall.errors[0].message
-End if 
+ASSERT:C1129(Storage:C1525.onErrCall.errors.length#0)
+
+//If (Storage.onErrCall.errors.length#0)
+//Form.errCode:=Storage.onErrCall.errors[0].errCode
+//Form.message:=Storage.onErrCall.errors[0].message
+//End if 
 
 
 //Form.errors:=Storage.onErrCall.errors
-Form:C1466.countOnErrCall:=Storage:C1525.onErrCall.count
+//Form.countOnErrCall:=Storage.onErrCall.count
+//Storage.onErrCall.errors.length

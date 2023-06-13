@@ -13,12 +13,12 @@ This file is distributed under the same license as the product package.-->
       <body>
          <group resname="Developer errors">
             <trans-unit id="1" resname="ERR_HDI1_1">
-               <source>Custom error #1 of the HDI project</source>
-               <target>Custom error #1 of the HDI project</target>
+               <source>Try another file name</source>
+               <target>Try another file name</target>
             </trans-unit>
             <trans-unit id="2" resname="ERR_HDI1_2">
-               <source>Custom error #2 of the HDI project</source>
-               <target>Custom error #2 of the HDI project</target>
+               <source>The file must exist in the HDI</source>
+               <target>The file must exist in the HDI</target>
             </trans-unit>
          </group>
       </body>

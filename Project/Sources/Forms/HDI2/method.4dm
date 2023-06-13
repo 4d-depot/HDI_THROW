@@ -14,17 +14,16 @@ Case of
 		
 		Form:C1466.codes:=New object:C1471()
 		Form:C1466.codes.values:=New collection:C1472(1; 2; 3)
-		Form:C1466.codes.index:=1
+		Form:C1466.codes.index:=0
 		
 		
 		Form:C1466.descriptions:=New object:C1471()
 		Form:C1466.descriptions.values:=New collection:C1472(""; "I am an error"; "I am another error")
-		Form:C1466.descriptions.index:=1
+		Form:C1466.descriptions.index:=0
 		
 		Form:C1466.fileNames:=New object:C1471()
 		Form:C1466.fileNames.values:=New collection:C1472("existingFile.json"; "notExistingFile.json")
-		Form:C1466.fileNames.currentValue:="Select a file"
-		Form:C1466.fileNames.index:=-1
+		Form:C1466.fileNames.index:=0
 		
 		emptyStorage
 		

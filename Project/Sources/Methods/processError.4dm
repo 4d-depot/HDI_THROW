@@ -5,9 +5,7 @@ var $errors; $shared : Collection
 
 
 If (Storage:C1525.onErrCall.stack)
-	
 	throw:C1805
-	
 Else 
 	
 	$errors:=Last errors:C1799
@@ -15,6 +13,7 @@ Else
 	
 	Use (Storage:C1525.onErrCall)
 		Storage:C1525.onErrCall.errors.combine($shared)
+		//Storage.onErrCall.count:=Storage.onErrCall.count+1
 	End use 
 	
 End if 
