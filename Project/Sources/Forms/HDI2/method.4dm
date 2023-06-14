@@ -1,8 +1,4 @@
 
-var $picture : Picture
-
-var $folder : 4D:C1709.Folder
-var $path : Text
 
 Case of 
 		
@@ -15,7 +11,6 @@ Case of
 		Form:C1466.codes:=New object:C1471()
 		Form:C1466.codes.values:=New collection:C1472(1; 2; 3)
 		Form:C1466.codes.index:=0
-		
 		
 		Form:C1466.descriptions:=New object:C1471()
 		Form:C1466.descriptions.values:=New collection:C1472(""; "I am an error"; "I am another error")
@@ -35,8 +30,6 @@ Case of
 	: (Form event code:C388=On Page Change:K2:54)
 		
 		emptyStorage
-		
-		Form:C1466.errors:=Storage:C1525.onErrCall.errors
 		
 End case 
 

@@ -16,7 +16,3 @@ End case
 If (Storage:C1525.onErrCall.errors.length#0)
 	Form:C1466.result:=Storage:C1525.onErrCall.errors[0].message
 End if 
-
-//Form.errors:=Storage.onErrCall.errors
-
-//Form.countOnErrCall:=Storage.onErrCall.count
