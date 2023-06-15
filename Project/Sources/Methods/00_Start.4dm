@@ -30,12 +30,12 @@ Case of
 		
 		$options:=New object:C1471
 		
-		$options.title:="get started with setting up permissions to access data"+$cr
+		$options.title:="get started with the new throw command"+$cr
 		
 		$options.blog:="blog.4d.com"
-		$options.info:="ORDA permissions to access data"  //ex : "4D View Pro feature"
+		$options.info:="Handling errors"  //ex : "4D View Pro feature"
 		
-		$options.minimumVersion:="1980"  // 1660 means 16R6   1601 means 16.1 (do not use !)
+		$options.minimumVersion:="2020"  // 1660 means 16R6   1601 means 16.1 (do not use !)
 		
 		// $options.license:=4D View license  // IF ANY NEEDED
 		

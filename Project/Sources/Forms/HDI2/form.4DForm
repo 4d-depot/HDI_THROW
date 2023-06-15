@@ -156,7 +156,7 @@
 					"top": 90,
 					"left": 60,
 					"width": 1020,
-					"height": 150,
+					"height": 220,
 					"sizingX": "fixed",
 					"sizingY": "fixed",
 					"dataSource": "_Descriptions[1]",
@@ -211,6 +211,7 @@
 					"headerHeight": "21px",
 					"scrollbarHorizontal": "hidden",
 					"focusable": false,
+					"selectionMode": "none",
 					"columns": [
 						{
 							"header": {
@@ -701,6 +702,7 @@
 					"headerHeight": "21px",
 					"scrollbarHorizontal": "hidden",
 					"focusable": false,
+					"selectionMode": "none",
 					"columns": [
 						{
 							"header": {
@@ -736,7 +738,10 @@
 								"name": "Footer7"
 							},
 							"width": 100,
-							"dataSource": "This:C1470.deferred"
+							"dataSource": "This:C1470.deferred",
+							"dataSourceTypeHint": "boolean",
+							"textAlign": "center",
+							"enterable": false
 						}
 					]
 				},
@@ -1031,7 +1036,10 @@
 								"name": "Footer10"
 							},
 							"width": 100,
-							"dataSource": "This:C1470.deferred"
+							"dataSource": "This:C1470.deferred",
+							"dataSourceTypeHint": "boolean",
+							"resizable": false,
+							"textAlign": "center"
 						}
 					]
 				},
@@ -1056,7 +1064,7 @@
 					"height": 310,
 					"sizingX": "fixed",
 					"sizingY": "fixed",
-					"dataSource": "_Directions[1]",
+					"dataSource": "_Directions[10]",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "dotted",
@@ -1181,6 +1189,6 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 7914,
+	"geometryStamp": 7916,
 	"windowSizingY": "variable"
 }
