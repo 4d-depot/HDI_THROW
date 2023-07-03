@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <!--Translation file.
+This file is distributed under the same license as the product package.-->
+
+<xliff version="1.0" xmlns:d4="http://www.4d.com/d4-ns">
+   <file datatype="x-STR#" original="x-undefined" source-language="en-US" target-language="fr">
+      <header>
+         <prop-group name="Xliff-Editor.4dbase">
+            <prop prop-type="version">1.0</prop>
+         </prop-group>
+      </header>
+      <body>
+         <group resname="Some errors">
+          <trans-unit id="1" resname="ERR_HDI1_1">
+		   	   <source>The file &quot;{name}&quot; is not found in {path}.</source>
+			   <target>Le fichier &quot;{name}&quot; est introuvable dans {path}.</target>
+		    </trans-unit>
+            <trans-unit id="2" resname="ERR_HDI1_2">
+               <source>Try another file name</source>
+               <target>Essayez avec un autre fichier</target>
+            </trans-unit>
+            <trans-unit id="3" resname="ERR_HDI1_3">
+               <source>The file must exist in the HDI</source>
+               <target>Le fichier doit exister dans le HDI</target>
+            </trans-unit>
+         </group>
+      </body>
+   </file>
+</xliff>

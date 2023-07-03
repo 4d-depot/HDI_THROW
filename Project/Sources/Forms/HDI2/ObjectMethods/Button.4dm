@@ -16,7 +16,7 @@ Case of
 		
 		If (Not:C34(File:C1566("/RESOURCES/"+Form:C1466.fileNames.currentValue).exists))
 			Form:C1466.result:="This file does not exists"
-			throw:C1805(New object:C1471("componentSignature"; "xbox"; "errCode"; 600; "name"; Form:C1466.fileNames.currentValue; "path"; "/RESOURCES"))
+			throw:C1805({componentSignature: "HDI1"; errCode: 1; name: Form:C1466.fileNames.currentValue; path: "/RESOURCES"})
 		End if 
 		
 End case 

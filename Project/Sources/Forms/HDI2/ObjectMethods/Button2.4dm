@@ -4,7 +4,7 @@ If (btnTrace)
 End if 
 
 
-ON ERR CALL:C155("processError")
+ON ERR CALL:C155("processError2")
 
 Form:C1466.result:="This file exists"
 
